@@ -12,13 +12,13 @@ var result3 = buildName("Bob", "Adams");  //correct
 
 
 //anonymous function type with optional parameters
-var buildName1 : (firstName: string, lastName?: string) => string = 
+var buildName1 : (firstName: string, lastName: string) => string = 
 function(firstName: string, lastName?: string) : string {
     if (lastName)
         return firstName + " " + lastName;
     else
         return firstName;
 }
-	
-    
-    
+
+
+
